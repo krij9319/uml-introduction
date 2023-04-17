@@ -1,0 +1,9 @@
+@startuml 演習2-3
+    actor 利用者 #FFFFFF;line:SkyBlue;line.bold;
+    rectangle ホテル{
+        usecase 予約する
+        usecase ログインする
+    }
+    予約する <-- 利用者
+    予約する <. ログインする : <<include>>
+@enduml
