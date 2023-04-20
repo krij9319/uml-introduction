@@ -1,11 +1,11 @@
 @startuml 演習2-5
     actor 利用者 #FFFFFF;line:SkyBlue;line.bold;
     rectangle ホテル{
-        usecase ログイン
-        usecase (<u>予約する</u>\nキャンペーン中\nキャンペーン価格で予約する) as input
+        usecase ログインする
+        usecase (<u>予約する</u>\n拡張点\nキャンペーン期間) as input
         usecase キャンペーン
         }
-    input .> ログイン : <<include>>
+    input .> ログインする : <<include>>
     キャンペーン .> input : <<extend>>
     input <-- 利用者
 @enduml
