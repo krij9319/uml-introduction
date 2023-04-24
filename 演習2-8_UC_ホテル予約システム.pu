@@ -5,7 +5,7 @@
     actor ホテル管理者 #FFFFFF;line:Black;line.bold;
     rectangle ホテル予約システム{
         usecase 空室状況を閲覧する
-        usecase (<u>ホテルを予約する</u>\n拡張点\nキャンペーン価格) as input
+        usecase (<u>ホテルを予約する</u>\n拡張点\nキャンペーン期間) as input
         usecase 空室状況を入力する
         usecase 予約を集計する
         usecase ログインする
