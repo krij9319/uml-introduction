@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+object "<u>空車リスト2: 空車リスト</u>" as k2 {
+日付
+}
+object "<u>空車リスト1: 空車リスト</u>" as k1 {
+日付
+}
+object "<u>車情報1: 車</u>" as car1 {
+管理番号=5
+車種
+貸出料金
+}
+object "<u>車情報2: 車</u>" as car2 {
+管理番号=6
+車種
+貸出料金
+}
+k1 -- car1
+k1 -- car2
+k2 -- car1
+@enduml
