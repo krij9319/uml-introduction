@@ -1,0 +1,15 @@
+@startuml 演習3-4
+    left to right direction
+    class 車{
+    - 車種:String
+    ---
+    }
+    class タイヤ{
+    - 種類:String
+    - メーカー:String
+    - サイズ:String
+    - 価格:int
+    ---
+    }
+    車 o-- タイヤ
+@enduml
