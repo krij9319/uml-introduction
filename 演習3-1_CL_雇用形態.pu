@@ -1,0 +1,22 @@
+@startuml 演習3-1
+    top to bottom direction
+    class 従業員{
+    ---
+    ---
+    }
+    class 派遣{
+    ---
+    ---
+    }
+    class 契約社員{
+    ---
+    ---
+    }
+    class 正社員{
+    ---
+    ---
+    }
+    従業員 <|-- 派遣
+    従業員 <|-- 契約社員
+    従業員 <|-- 正社員
+@enduml
