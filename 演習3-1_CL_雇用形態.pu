@@ -1,6 +1,8 @@
 @startuml 演習3-1
     top to bottom direction
     class 従業員{
+    + 社員番号
+    + 社員名
     ---
     ---
     }
