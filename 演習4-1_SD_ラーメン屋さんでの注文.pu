@@ -1,0 +1,20 @@
+@startuml 演習4-1
+    hide footbox
+    Actor 客 as customer
+    participant ":フロア店員" as floar
+    participant ":料理人" as cooker
+
+    mainframe sd ラーメン屋さん
+    activate  customer
+            activate floar
+                activate cooker
+        customer -> floar : ラーメンを注文する
+
+        floar -> cooker : 調理を支持する
+
+            cooker -> cooker : 調理をする
+
+        floar <-- cooker : ラーメン
+
+        customer <-- floar : ラーメン
+@enduml
