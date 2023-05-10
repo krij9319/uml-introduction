@@ -1,4 +1,5 @@
 @startuml 演習3-7
+    left to right direction
     object "<u>注文リスト:注文</u>" as order1{
         注文日=11月21日
         数量=2個
