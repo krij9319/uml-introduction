@@ -8,6 +8,7 @@
     - 種類:String
     - メーカー:String
     - サイズ:String
+    - 個数:int
     - 価格:int
     ---
     }
