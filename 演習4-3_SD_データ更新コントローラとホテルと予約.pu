@@ -1,0 +1,20 @@
+@startuml シーケンス図
+    hide footbox
+    participant "controller:データ更新コントローラ" as controller
+    participant "hotel:ホテル" as hotel
+    participant ":予約" as reserve
+
+    activate controller
+        controller -> hotel : 予約動作を呼び出す
+
+        activate hotel
+            hotel -> reserve : 作成する
+
+            activate reserve
+            hotel -> hotel : 予約登録動作を行う
+
+            activate hotel
+            deactivate hotel
+            
+    deactivate controller
+@enduml
