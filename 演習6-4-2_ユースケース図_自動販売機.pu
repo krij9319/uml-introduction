@@ -1,0 +1,17 @@
+@startuml ユースケース図
+    left to right direction
+    actor 客 #90EDA3;line:LightGreen;line.bold;
+    actor ベンダー #000000;line:Black;line.bold;
+    rectangle 自動販売機{
+        usecase お金を入れる
+        usecase ボタンを押す
+        usecase 商品を出す
+    }
+
+    客 --> お金を入れる
+    お金を入れる <. ボタンを押す : <<include>>
+    ボタンを押す <. 商品を出す : <<include>>
+
+    商品を出す <-- ベンダー
+    お金を入れる --> ベンダー
+@enduml
