@@ -1,6 +1,6 @@
 @startuml シーケンス図
     hide footbox
-    participant ":客" as customer
+    Actor ":客" as customer
     participant ":料金装置" as money
     participant ":ボタン" as button
     participant ":ベンダー装置" as bender
