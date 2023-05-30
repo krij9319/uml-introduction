@@ -1,0 +1,13 @@
+@startuml ユースケース図
+    left to right direction
+    actor ユーザ #90EDA3;line:LightGreen;line.bold;
+    actor 光センサー #FFFFFF;line:Black;line.bold;
+    actor 左右モータ #000000;line:Black;line.bold;
+    rectangle ライントレーサー{
+        usecase ライン上を進む
+    }
+
+    ユーザ --> ライン上を進む
+    ライン上を進む <-- 光センサー
+    ライン上を進む <-- 左右モータ
+@enduml
