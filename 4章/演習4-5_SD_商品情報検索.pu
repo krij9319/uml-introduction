@@ -1,0 +1,35 @@
+@startuml シーケンス図
+    hide footbox
+    Actor ":会員" as user
+    participant "商品検索画面" as boundary <<boundary>>
+    participant "商品検索" as control <<control>>
+
+    activate user
+    user -> boundary
+
+        activate boundary
+        boundary -> control
+
+            activate control
+            create "商品情報" as entity1 <<entity>>
+            control -->> entity1 : <<create>>生成()
+
+                par 商品カテゴリ数
+                create "商品" as entity2 <<entity>>
+                control -->> entity2 : <<create>>生成()
+
+                control -> entity1
+                activate entity1
+                deactivate entity1
+
+                end par
+
+            boundary <<-- control
+            deactivate control
+
+        boundary -> boundary
+        activate boundary
+        deactivate boundary
+        deactivate boundary
+    deactivate user
+@enduml

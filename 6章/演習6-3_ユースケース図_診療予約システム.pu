@@ -1,0 +1,18 @@
+@startuml ユースケース図
+    left to right direction
+    actor 利用者 #SkyBlue;line:SkyBlue;line.bold;
+    actor 看護師 #Black;line:Black;line.bold;
+    package 〇〇医院診察予約{
+        usecase メニュー
+        usecase 予約と確認
+        usecase あなたの順番
+        usecase 今の順番
+    }
+
+    利用者 --> メニュー
+    利用者 --> 予約と確認
+    利用者 --> あなたの順番
+    利用者 --> 今の順番
+    今の順番 <-- 看護師
+
+@enduml

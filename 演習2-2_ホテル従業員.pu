@@ -1,7 +1,0 @@
-@startuml 演習2-2
-    rectangle ホテル{
-    usecase 経営者
-    usecase ホテル従業員
-    }
-    ホテル従業員<|-- 経営者
-@enduml

@@ -1,0 +1,9 @@
+@startuml 分岐
+title 基本的な分岐
+
+:ビデオを借りる;
+if () is (<color:red>[会員登録している]) then
+#Pink:貸出料金を支払う;
+else (<color:blue>[会員登録をしていない])
+#SkyBlue:会員登録をする;
+@enduml
