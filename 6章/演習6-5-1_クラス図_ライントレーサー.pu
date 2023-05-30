@@ -1,0 +1,26 @@
+@startuml クラス図
+    left to right direction
+    class ライントレーサー{
+    ---
+    }
+
+    class 光センサー{
+    ---
+    }
+
+    class 右モータ{
+    ---
+    }
+
+    class 左モータ{
+    ---
+    }
+
+    class CPU{
+    ---
+    }
+
+    class 電源SW{
+    ---
+    }
+@enduml
