@@ -1,5 +1,5 @@
 @startuml アクティビティ図
-title A者の全体業務
+title A社の全体業務
 
 |営業部門|
 start
@@ -30,5 +30,5 @@ start
 |販売代理店|
 :入金確認;
 
-end
+stop
 @enduml
