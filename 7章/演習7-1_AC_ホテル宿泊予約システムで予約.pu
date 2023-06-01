@@ -13,6 +13,6 @@ endwhile
 
 :ホテルの予約を行う;
 
-end
+stop
 
 @enduml
