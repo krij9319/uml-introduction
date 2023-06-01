@@ -26,5 +26,5 @@ start
     
 |客|
 :弁当を手に持つ;
-end
+stop
 @enduml
