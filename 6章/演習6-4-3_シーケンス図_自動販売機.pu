@@ -1,0 +1,27 @@
+@startuml シーケンス図
+    hide footbox
+    Actor ":客" as customer
+    participant ":料金装置" as money
+    participant ":ボタン" as button
+    participant ":ベンダー装置" as bender
+
+    activate customer
+    customer -> money : お金を入れる
+
+        activate money
+        money -> button : ボタンを選ぶ
+
+            activate button
+            button -> bender : ボタンを押す
+
+                activate bender
+                bender -> bender : ドリンクを探す
+                activate bender
+                deactivate bender
+
+            deactivate button
+
+        deactivate money
+
+    customer <-- bender : ドリンク    
+@enduml
